@@ -110,12 +110,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Home.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Pages\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
+	  <Compile Include="Pages\CreateEvents.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Pages\CreateEvents.Designer.cs">
+		  <DependentUpon>CreateEvents.cs</DependentUpon>
+	  </Compile>
+	  <Compile Include="Pages\Home.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Pages\Home.Designer.cs">
+		  <DependentUpon>Home.cs</DependentUpon>
+	  </Compile>
+	  <Compile Include="Pages\Login\LoginForm.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Pages\Login\LoginForm.Designer.cs">
+		  <DependentUpon>LoginForm.cs</DependentUpon>
+	  </Compile>
+	  <Compile Include="Pages\Login\LoginSelector.cs">
+		  <SubType>UserControl</SubType>
+	  </Compile>
+	  <Compile Include="Pages\Login\LoginSelector.Designer.cs">
+		  <DependentUpon>LoginSelector.cs</DependentUpon>
+	  </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Component\Layout\Header.resx">

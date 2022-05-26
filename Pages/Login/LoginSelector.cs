@@ -7,60 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AElf;
-using AElf.Client.Service;
-using AElf.Cryptography;
 
-namespace DemeterGift_Aelf.Component.Layout
+namespace DemeterGift_Aelf.Pages.Login
 {
-    public partial class Header : UserControl
+    public partial class LoginSelector : UserControl
     {
-        public Header()
+        public LoginSelector()
         {
             InitializeComponent();
-            LoginBTNShow();
         }
 
-        private async void LoginBTNShow()
-        {
-            if (Properties.Settings.Default.LoggedIn == true)
-            {
-                PNLloginContainer.Visible = false;
-                AddressPNL.Visible = true;
-                loadAddressAndBalance();
-            }
-            else
-            {
-                PNLloginContainer.Visible = true;
-                AddressPNL.Visible = false;
-            }
-        }
-
-        AElfClient client = new AElfClient("https://aelf-test-node.aelf.io");
-
-        private async void loadAddressAndBalance()
-        {
-            var address = client.GetAddressFromPubKey(Properties.Settings.Default.PrivateKey);
-            AddressTXT.Text = address.Substring(0, 20) + "...";
-
-        }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            Form1 MainForm = (Form1)this.Parent;
-            MainForm.PnlContainer.Controls.Clear();
-            MainForm.PnlContainer.Controls.Add(new Pages.Home());
-            MainForm.PnlContainer.Controls[0].Dock = DockStyle.Top;
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void LoginForm()
         {
-            Form1 MainForm = (Form1)this.Parent;
+            Form1 MainForm = (Form1)((Guna.UI2.WinForms.Guna2Panel)((TableLayoutPanel)this.Parent).Parent).Parent;
             MainForm.PnlContainer.Controls.Clear();
             TableLayoutPanel tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel1.ColumnCount = 3;
@@ -74,11 +37,23 @@ namespace DemeterGift_Aelf.Component.Layout
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.41936F));
             tableLayoutPanel1.Size = new System.Drawing.Size(519, 248);
             tableLayoutPanel1.TabIndex = 3;
-            tableLayoutPanel1.Controls.Add(new Pages.Login.LoginSelector(), 1, 0);
+            tableLayoutPanel1.Controls.Add(new Pages.Login.LoginForm(), 1, 0);
             tableLayoutPanel1.Controls[0].Dock = DockStyle.Fill;
 
             MainForm.PnlContainer.Controls.Add(tableLayoutPanel1);
             MainForm.PnlContainer.Controls[0].Dock = DockStyle.Fill;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.userType = "manager";
+            LoginForm();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.userType = "user";
+            LoginForm();
         }
     }
 }

@@ -44,3 +44,49 @@ H:\Codes\DemeterGift Aelf\DemeterGift Aelf\bin\Debug\Newtonsoft.Json.xml
 H:\Codes\DemeterGift Aelf\DemeterGift Aelf\bin\Debug\Guna.UI2.dll
 H:\Codes\DemeterGift Aelf\DemeterGift Aelf\obj\Debug\DemeterGift_Aelf.Component.Layout.Header.resources
 H:\Codes\DemeterGift Aelf\DemeterGift Aelf\obj\Debug\DemeterGift_Aelf.Pages.Home.resources
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\native\win-x64\secp256k1.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\native\win-x86\secp256k1.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\native\linux-x64\libsecp256k1.so
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\native\osx-x64\libsecp256k1.dylib
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\x86\virgil_crypto_net.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\x64\virgil_crypto_net.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\DemeterGift Aelf.exe.config
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\DemeterGift Aelf.exe
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\DemeterGift Aelf.pdb
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\AElf.Client.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\AElf.Cryptography.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\AElf.Types.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\BouncyCastle.Crypto.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Google.Protobuf.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Guna.UI2.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Newtonsoft.Json.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Secp256k1.Net.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Buffers.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.ComponentModel.Annotations.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Memory.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Numerics.Vectors.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Virgil.Crypto.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Virgil.CryptoImpl.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\VirgilCryptoAPI.dll
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\BouncyCastle.Crypto.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Google.Protobuf.pdb
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Google.Protobuf.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Newtonsoft.Json.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Secp256k1.Net.pdb
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\Secp256k1.Net.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Buffers.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Memory.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Numerics.Vectors.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.csproj.AssemblyReference.cache
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.csproj.SuggestedBindingRedirects.cache
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift_Aelf.Component.Layout.Header.resources
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift_Aelf.Form1.resources
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift_Aelf.Pages.Home.resources
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift_Aelf.Properties.Resources.resources
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.csproj.GenerateResource.cache
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.csproj.CoreCompileInputs.cache
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.csproj.CopyComplete
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.exe
+H:\Codes\Backup\DemeterGift-Aelf-main\obj\Debug\DemeterGift Aelf.pdb

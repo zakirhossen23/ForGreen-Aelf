@@ -36,6 +36,7 @@
             // PnlContainer
             // 
             this.PnlContainer.AutoScroll = true;
+            this.PnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(31)))), ((int)(((byte)(41)))));
             this.PnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContainer.Location = new System.Drawing.Point(0, 66);
             this.PnlContainer.Name = "PnlContainer";
