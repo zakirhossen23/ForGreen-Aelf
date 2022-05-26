@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemeterGift Aelf", "DemeterGift Aelf.csproj", "{555C5CE2-203E-4408-A3E1-787162229C6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemeterGift Aelf", "DemeterGift Aelf.csproj", "{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{555C5CE2-203E-4408-A3E1-787162229C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{555C5CE2-203E-4408-A3E1-787162229C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{555C5CE2-203E-4408-A3E1-787162229C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{555C5CE2-203E-4408-A3E1-787162229C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C5840287-8EAB-4E9D-A2C0-54CB93B77532}
+		SolutionGuid = {D74E1B4F-F17B-41A3-9ADF-1A86295DF9B7}
 	EndGlobalSection
 EndGlobal

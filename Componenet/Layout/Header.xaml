@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="DemeterGift_Aelf.Componenet.Layout.Header"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:DemeterGift_Aelf.Componenet.Layout"
+             mc:Ignorable="d" 
+             d:DesignHeight="70" d:DesignWidth="800">
+    <Grid  Background="#012033"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="10" Orientation="Horizontal">
+            <Image x:Name="homeBTN" RenderOptions.EdgeMode="Aliased" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center" Width="48" Source="/Resources/favicon.png" Stretch="Uniform" MouseDown="homeBTN_MouseDown"  />
+            <TextBlock Width="100" FontSize="15" TextAlignment="Center" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center"  Background="Transparent"  Foreground="Yellow" Text="Donation"/>
+            <TextBlock Width="120" FontSize="15" TextAlignment="Center" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center"  Background="Transparent"  Foreground="Yellow" Text="Create Events"/>
+
+        </StackPanel>
+        <Grid  Name="AddressPanel" Grid.Column="1"  Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock Name="AddressTXT" FontSize="15" Foreground="White">
+                    Address
+                </TextBlock>
+                <TextBlock Name="BalanceTXT"  FontSize="12"  Foreground="Yellow">
+                    Balance
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Button Content="Logout" Name="LogoutBTN" Height="40" Background="#102F42" BorderThickness="0" Click="LogoutBTN_Click" />
+            </StackPanel>
+        </Grid>
+        <Grid Visibility="Hidden" HorizontalAlignment="Right" Width="100" Name="LoginPanel" Grid.Column="1"  Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Button Name="LoginBTN" Content="Login" Height="40" Background="#102F42" BorderThickness="0" Click="LoginBTN_Click" />
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</UserControl>
