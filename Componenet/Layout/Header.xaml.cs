@@ -93,5 +93,20 @@ namespace DemeterGift_Aelf.Componenet.Layout
             Properties.Settings.Default.Reload();
             LoginBTNShow();
         }
+
+        private void donationBTN_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Pages.Donation donation = new Pages.Donation();
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.MainFrame.Navigate(donation);
+        }
+
+
+        private void CreateEventsBTN_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Pages.CreateEvents CreateEvents = new Pages.CreateEvents();
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.MainFrame.Navigate(CreateEvents);
+        }
     }
 }

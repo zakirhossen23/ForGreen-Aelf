@@ -34,6 +34,45 @@
           "lib/netstandard2.0/AElf.Cryptography.dll": {}
         }
       },
+      "AElf.CSharp.Core/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AElf.Types": "1.0.0",
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AElf.CSharp.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.CSharp.Core.dll": {}
+        }
+      },
+      "AElf.Kernel.SmartContract.Shared/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AElf.Types": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AElf.Kernel.SmartContract.Shared.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.Kernel.SmartContract.Shared.dll": {}
+        }
+      },
+      "AElf.Sdk.CSharp/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AElf.CSharp.Core": "1.0.0",
+          "AElf.Cryptography": "1.0.0",
+          "AElf.Kernel.SmartContract.Shared": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AElf.Sdk.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.Sdk.CSharp.dll": {}
+        }
+      },
       "AElf.Types/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -77,6 +116,15 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.NETCore.Jit/1.0.2": {
@@ -1533,6 +1581,45 @@
         "lib/netstandard2.0/AElf.Cryptography.dll"
       ]
     },
+    "AElf.CSharp.Core/1.0.0": {
+      "sha512": "CnmQVAmV5l8s6taf9zXP3M/20mg2eao9ULF0+NU4bBHKNMiwHvw/Ta2kSyzaoDKCdJU242LCDz0Veux/fwVc+w==",
+      "type": "package",
+      "path": "aelf.csharp.core/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "aelf.csharp.core.1.0.0.nupkg.sha512",
+        "aelf.csharp.core.nuspec",
+        "lib/netstandard2.0/AElf.CSharp.Core.dll"
+      ]
+    },
+    "AElf.Kernel.SmartContract.Shared/1.0.0": {
+      "sha512": "eFcloY+JWleayz2y6yVu2+BBt4B6SFahnrjdNwVvZeh1kcwhJbF+L/2MFBcKpNBChEsH4WMuMmUigPkzszqN/Q==",
+      "type": "package",
+      "path": "aelf.kernel.smartcontract.shared/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "aelf.kernel.smartcontract.shared.1.0.0.nupkg.sha512",
+        "aelf.kernel.smartcontract.shared.nuspec",
+        "lib/netstandard2.0/AElf.Kernel.SmartContract.Shared.dll"
+      ]
+    },
+    "AElf.Sdk.CSharp/1.0.0": {
+      "sha512": "a6smyV/HgwUbj9QcAVN3S+0ZrM7xPzinOS7EzoRXnc++3v6wU6azmEccqhxp9cUXwmLeYCFpSj3RY2uvlRMGvQ==",
+      "type": "package",
+      "path": "aelf.sdk.csharp/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "aelf.sdk.csharp.1.0.0.nupkg.sha512",
+        "aelf.sdk.csharp.nuspec",
+        "lib/netstandard2.0/AElf.Sdk.CSharp.dll"
+      ]
+    },
     "AElf.Types/1.0.0": {
       "sha512": "Pf+bpMxIkrYibUZgtA7cyMbEWOW/skJhdG0l7KJgAYw7IVhAZq2iDIftsbpZF9MW1MIrbwk/FPT3y71eSiM73g==",
       "type": "package",
@@ -1622,6 +1709,75 @@
         "materialdesignthemes.4.5.0.nupkg.sha512",
         "materialdesignthemes.nuspec",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.NETCore.Jit/1.0.2": {
@@ -5357,6 +5513,7 @@
     "net5.0-windows7.0": [
       "AElf.Client >= 1.1.0",
       "AElf.Cryptography >= 1.0.0",
+      "AElf.Sdk.CSharp >= 1.0.0",
       "AElf.Types >= 1.0.0",
       "Google.Protobuf >= 3.21.0",
       "MaterialDesignThemes >= 4.5.0",
@@ -5380,11 +5537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Codes\\test\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+      "projectUniqueName": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
       "projectName": "DemeterGift Aelf",
-      "projectPath": "H:\\Codes\\test\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+      "projectPath": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
       "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
-      "outputPath": "H:\\Codes\\test\\DemeterGift Aelf\\obj\\",
+      "outputPath": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5423,6 +5580,10 @@
             "version": "[1.1.0, )"
           },
           "AElf.Cryptography": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "AElf.Sdk.CSharp": {
             "target": "Package",
             "version": "[1.0.0, )"
           },

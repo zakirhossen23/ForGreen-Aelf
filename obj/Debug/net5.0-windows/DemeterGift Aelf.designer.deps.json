@@ -36,6 +36,42 @@
           }
         }
       },
+      "AElf.CSharp.Core/1.0.0": {
+        "dependencies": {
+          "AElf.Types": "1.0.0",
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.CSharp.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AElf.Kernel.SmartContract.Shared/1.0.0": {
+        "dependencies": {
+          "AElf.Types": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.Kernel.SmartContract.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AElf.Sdk.CSharp/1.0.0": {
+        "dependencies": {
+          "AElf.CSharp.Core": "1.0.0",
+          "AElf.Cryptography": "1.0.0",
+          "AElf.Kernel.SmartContract.Shared": "1.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AElf.Sdk.CSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "AElf.Types/1.0.0": {
         "dependencies": {
           "Google.Protobuf": "3.21.0"
@@ -74,6 +110,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.NETCore.Jit/1.0.2": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Portable.Compatibility/1.0.1": {
@@ -1362,6 +1399,27 @@
       "path": "aelf.cryptography/1.0.0",
       "hashPath": "aelf.cryptography.1.0.0.nupkg.sha512"
     },
+    "AElf.CSharp.Core/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CnmQVAmV5l8s6taf9zXP3M/20mg2eao9ULF0+NU4bBHKNMiwHvw/Ta2kSyzaoDKCdJU242LCDz0Veux/fwVc+w==",
+      "path": "aelf.csharp.core/1.0.0",
+      "hashPath": "aelf.csharp.core.1.0.0.nupkg.sha512"
+    },
+    "AElf.Kernel.SmartContract.Shared/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eFcloY+JWleayz2y6yVu2+BBt4B6SFahnrjdNwVvZeh1kcwhJbF+L/2MFBcKpNBChEsH4WMuMmUigPkzszqN/Q==",
+      "path": "aelf.kernel.smartcontract.shared/1.0.0",
+      "hashPath": "aelf.kernel.smartcontract.shared.1.0.0.nupkg.sha512"
+    },
+    "AElf.Sdk.CSharp/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a6smyV/HgwUbj9QcAVN3S+0ZrM7xPzinOS7EzoRXnc++3v6wU6azmEccqhxp9cUXwmLeYCFpSj3RY2uvlRMGvQ==",
+      "path": "aelf.sdk.csharp/1.0.0",
+      "hashPath": "aelf.sdk.csharp.1.0.0.nupkg.sha512"
+    },
     "AElf.Types/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1389,6 +1447,13 @@
       "sha512": "sha512-G26hIGFwGH5q46CD59zGiAs4aLsASsKCCBqgnISPwIcq8pAfKRRAKxXfOQJgNDyIUnVm5Ug67gldsEgeWP6GoQ==",
       "path": "materialdesignthemes/4.5.0",
       "hashPath": "materialdesignthemes.4.5.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Jit/1.0.2": {
       "type": "package",
