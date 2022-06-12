@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj": {}
+    "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj": {}
   },
   "projects": {
-    "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj": {
+    "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+        "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
         "projectName": "DemeterGift Aelf",
-        "projectPath": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+        "projectPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
         "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
-        "outputPath": "H:\\Codes\\DemeterGift Aelf\\DemeterGift Aelf\\obj\\",
+        "outputPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,6 +60,10 @@
             "AElf.Types": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "Facebook": {
+              "target": "Package",
+              "version": "[7.0.6, )"
             },
             "Google.Protobuf": {
               "target": "Package",

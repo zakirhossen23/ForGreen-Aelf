@@ -24,5 +24,33 @@ namespace DemeterGift_Aelf.Pages
         {
             InitializeComponent();
         }
+        Classes.contract contract = new Classes.contract();
+
+        public void clearTextBoxes(List<TextBox> allControls)
+        {
+            foreach (var control in allControls)
+            {
+                control.Clear();
+            }
+        }
+
+        private async void CreatEventBTN_Click(object sender, RoutedEventArgs e)
+        {
+            CreatEventBTN.IsEnabled = false;
+            Dictionary<string, string> InputOBJ = new Dictionary<string, string>();
+            InputOBJ.Add("Title", EventTitleTXT.Text);
+            InputOBJ.Add("End Date", EventEndDateTXT.Text);
+            InputOBJ.Add("Goal", EventGoalTXT.Text);
+            InputOBJ.Add("Logo Link", EventLogoLinkTXT.Text);
+            InputOBJ.Add("Wallet", await contract.GetWalletAddress());
+
+
+            var output =  await contract.CreateEvent(InputOBJ);
+
+            Console.WriteLine(output);
+            clearTextBoxes(new List<TextBox>() { EventTitleTXT, EventGoalTXT, EventLogoLinkTXT });
+            EventEndDateTXT.Text ="";
+            CreatEventBTN.IsEnabled = true;
+        }
     }
 }

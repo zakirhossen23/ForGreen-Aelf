@@ -9,11 +9,14 @@ using AElf.Client.Dto;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using AElf.CSharp.Core;
-namespace DemeterGift_Aelf.Contract
+using AElf.Types;
+using DemeterGift;
+
+namespace DemeterGift_Aelf.Classes
 {
     internal class contract
     {
-        string tokenContractAddress = "2YcMiBaQg7huCJdSTFCCSpK4WtCaLeM7uj7wB4RwBQgriy8uVq";
+        string tokenContractAddress = "2dtnkWDyJJXeDRcREhKSZHrYdDGMbn3eus5KYpXonfoTygFHZm";
         string privatekey = "aabb7f566f8f7c2d9f6ca79c45a160d6f015cccca8d29fbb367d78c7e0111113";
 
         AElfClient client = new AElfClient("https://tdvv-test-node.aelf.io");
@@ -29,6 +32,12 @@ namespace DemeterGift_Aelf.Contract
             return Encoding.ASCII.GetString(bytes); // returns: "Hello world" for "48656C6C6F20776F726C64"
         }
 
+        string MyDictionaryToJson(Dictionary<string, string> dict)
+        {
+            var entries = dict.Select(d =>
+                string.Format("\"{0}\": \"{1}\"", d.Key,  d.Value));
+            return "{" + string.Join(",", entries) + "}";
+        }
 
         #endregion
 
@@ -37,7 +46,7 @@ namespace DemeterGift_Aelf.Contract
 
             var ownerAddress = client.GetAddressFromPrivateKey(privatekey);
 
-            
+
             // Generate a transfer transaction.
             var transaction = await client.GenerateTransactionAsync(ownerAddress, tokenContractAddress, methodName, param);
 
@@ -50,17 +59,43 @@ namespace DemeterGift_Aelf.Contract
                 RawTransaction = txWithSign.ToByteArray().ToHex()
             });
             // After the transaction is mined, query the execution results.
+            await Task.Delay(3000);
             var transactionResult = await client.GetTransactionResultAsync(result.TransactionId);
-        var jsonFormat = FromHexString(transactionResult.ReturnValue);
-
+            var jsonFormat = FromHexString(transactionResult.ReturnValue);
+            
             return jsonFormat.ToString();
 
         }
 
+        public async Task<string> GetWalletAddress()
+        {
+            var walletAddress =  client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
 
-        public async Task<string>Testing()
+            return walletAddress;
+        }
+
+        public async Task<string> Testing()
         {
             return await CallContract("Hello", new Empty());
         }
+
+        public async Task<string> CreateEvent(Dictionary<string,string> eventURI)
+        {
+            var inJsonFormat = MyDictionaryToJson(eventURI);
+            return await CallContract("CreateEvent", new StringValue{ Value = inJsonFormat.ToString() });
+        }
+
+        public async Task<string> CreateToken(string EventID, string TokenURI)
+        {
+
+            InsertEventTokenInput Input = new InsertEventTokenInput
+            {
+                EventID = EventID,
+                TokenURI = TokenURI
+            };
+            return await CallContract("InsertAllEventToken", Input);
+        }
+
+
     }
 }

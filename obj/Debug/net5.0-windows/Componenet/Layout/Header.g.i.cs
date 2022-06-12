@@ -128,7 +128,7 @@ namespace DemeterGift_Aelf.Componenet.Layout {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;component/componenet/layout/header.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;V1.0.0.0;component/componenet/layout/header.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Componenet\Layout\Header.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

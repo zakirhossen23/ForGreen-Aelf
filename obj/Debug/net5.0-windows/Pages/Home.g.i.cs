@@ -53,7 +53,7 @@ namespace DemeterGift_Aelf.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;component/pages/home.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;V1.0.0.0;component/pages/home.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\Home.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

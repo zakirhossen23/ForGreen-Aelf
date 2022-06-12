@@ -24,7 +24,8 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0",
           "Virgil.Crypto": "2.4.10",
-          "Virgil.CryptoAPI": "1.0.2"
+          "Virgil.CryptoAPI": "1.0.2",
+          "DemeterGift": "1.0.0.0"
         },
         "runtime": {
           "DemeterGift Aelf.dll": {}
@@ -1000,6 +1001,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "DemeterGift/1.0.0.0": {
+        "runtime": {
+          "DemeterGift.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1687,6 +1696,11 @@
       "sha512": "sha512-rq7oJT9TgoMHV3tkYiIL/bIJxNW/lNkeseZ7X8b+pP83ejIK40nwW0OGUviIlIrydYlAJTNvwHI/6Wtk21oXLg==",
       "path": "virgil.cryptoapi/1.0.2",
       "hashPath": "virgil.cryptoapi.1.0.2.nupkg.sha512"
+    },
+    "DemeterGift/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

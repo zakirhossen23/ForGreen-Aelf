@@ -7,11 +7,11 @@
       mc:Ignorable="d" 
       Title="CreateEvents">
 
-    <Grid Width="600" Height="600" >
+    <Grid Width="600" Height="570" >
         <Border BorderBrush="White" Margin="2" Background="#121F29" BorderThickness="5">
             <StackPanel>
                 <StackPanel >
-                    <TextBlock Text="Create Event" FontSize="50" Margin="30 25" Foreground="White"/>
+                    <TextBlock Text="Create Event" FontSize="40" Margin="30 20" Foreground="White"/>
                 </StackPanel>
                 <StackPanel Margin="30 0">
                     <TextBlock Text="Event Title" Foreground="White" FontSize="20" Margin="0,0,0,10"/>
@@ -38,7 +38,7 @@
                     </Border>
                 </StackPanel>
                 <StackPanel Margin="30 5">
-                    <Button Height="50" Background="#0d6efd" Content="Create Event" Foreground="White" FontSize="25"/>
+                    <Button Name="CreatEventBTN" Height="50" Background="#0d6efd" Content="Create Event" Foreground="White" FontSize="25" Click="CreatEventBTN_Click"/>
                 </StackPanel>
             </StackPanel>
         </Border>

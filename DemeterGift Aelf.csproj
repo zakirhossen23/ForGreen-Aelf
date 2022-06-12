@@ -20,6 +20,7 @@
     <PackageReference Include="AElf.Cryptography" Version="1.0.0" />
     <PackageReference Include="AElf.Sdk.CSharp" Version="1.0.0" />
     <PackageReference Include="AElf.Types" Version="1.0.0" />
+    <PackageReference Include="Facebook" Version="7.0.6" />
     <PackageReference Include="Google.Protobuf" Version="3.21.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -33,6 +34,12 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
     <PackageReference Include="Virgil.Crypto" Version="2.4.10" />
     <PackageReference Include="Virgil.CryptoAPI" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DemeterGift">
+      <HintPath>Dll\DemeterGift.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

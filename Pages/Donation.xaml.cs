@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AElf.Client.MultiToken;
-using DemeterGift_Aelf.Contract;
+using DemeterGift_Aelf.Classes;
 
 namespace DemeterGift_Aelf.Pages
 {
