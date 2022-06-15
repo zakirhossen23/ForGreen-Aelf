@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemeterGift Aelf", "DemeterGift Aelf.csproj", "{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForGreen Aelf", "ForGreen Aelf.csproj", "{BDE6CF36-F19D-4F44-A7D7-F826F5C0AAAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

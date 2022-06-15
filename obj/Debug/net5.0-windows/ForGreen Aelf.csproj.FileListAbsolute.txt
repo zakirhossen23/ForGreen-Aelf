@@ -1,0 +1,14 @@
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.csproj.AssemblyReference.cache
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Componenet\EventFormat.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Componenet\Layout\Header.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\MainWindow.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Pages\CreateEvents.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Pages\Donation.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Pages\Home.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Pages\Login\LoginForm.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Pages\Login\LoginSelector.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\App.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\ForGreen Aelf_Content.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\ForGreen Aelf_MarkupCompile.cache
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\ForGreen Aelf_MarkupCompile.lref

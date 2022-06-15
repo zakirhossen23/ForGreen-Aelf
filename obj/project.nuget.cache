@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KzETKm7SI3NyVAUDVev15/gWagOxKN4HD7FA7v1RM3BChtE8mwuuWKIIKPQlLh+dcF3TVTQIGLPZXDI0W5reYA==",
+  "dgSpecHash": "x+RluH9YDee1CoRgkgo+tfdF3mpDoyVyBwiOqKsrTBtw2hzMTCTMmlGMqVL7NOKEXWatZJ1NuKwhi/OWhL23sw==",
   "success": true,
-  "projectFilePath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+  "projectFilePath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zakir\\.nuget\\packages\\aelf.client\\1.1.0\\aelf.client.1.1.0.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\aelf.cryptography\\1.0.0\\aelf.cryptography.1.0.0.nupkg.sha512",

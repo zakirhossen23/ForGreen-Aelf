@@ -62,7 +62,7 @@ namespace DemeterGift_Aelf.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;component/pages/donation.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;component/pages/donation.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\Donation.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

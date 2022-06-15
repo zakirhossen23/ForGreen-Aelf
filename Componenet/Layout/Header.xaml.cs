@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using AElf.Client.Service;
 using Newtonsoft.Json.Linq;
 
-namespace DemeterGift_Aelf.Componenet.Layout
+namespace ForGreen_Aelf.Componenet.Layout
 {
     /// <summary>
     /// Interaction logic for Header.xaml

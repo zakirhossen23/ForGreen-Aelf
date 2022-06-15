@@ -10,9 +10,9 @@ using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
 using AElf.CSharp.Core;
 using AElf.Types;
-using DemeterGift;
+using ForGreen;
 
-namespace DemeterGift_Aelf.Classes
+namespace ForGreen_Aelf.Classes
 {
     internal class contract
     {

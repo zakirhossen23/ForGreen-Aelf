@@ -1,7 +1,7 @@
-﻿<Application x:Class="DemeterGift_Aelf.App"
+﻿<Application x:Class="ForGreen_Aelf.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DemeterGift_Aelf"
+             xmlns:local="clr-namespace:ForGreen_Aelf"
              StartupUri="MainWindow.xaml"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Application.Resources>

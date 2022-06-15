@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DemeterGift_Aelf.Pages.Login
+namespace ForGreen_Aelf.Pages.Login
 {
     /// <summary>
     /// Interaction logic for LoginSelector.xaml

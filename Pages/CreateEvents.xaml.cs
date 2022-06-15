@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DemeterGift_Aelf.Pages
+namespace ForGreen_Aelf.Pages
 {
     /// <summary>
     /// Interaction logic for CreateEvents.xaml

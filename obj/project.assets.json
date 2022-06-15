@@ -5537,9 +5537,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
-      "projectName": "DemeterGift Aelf",
-      "projectPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
+      "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj",
+      "projectName": "ForGreen Aelf",
+      "projectPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj",
       "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
       "outputPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\obj\\",
       "projectStyle": "PackageReference",

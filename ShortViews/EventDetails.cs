@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemeterGift_Aelf.ShortViews
+namespace ForGreen_Aelf.ShortViews
 {
     internal class EventDetails
     {

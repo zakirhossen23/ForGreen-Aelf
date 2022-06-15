@@ -13,9 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AElf.Client.MultiToken;
-using DemeterGift_Aelf.Classes;
+using ForGreen_Aelf.Classes;
 
-namespace DemeterGift_Aelf.Pages
+namespace ForGreen_Aelf.Pages
 {
     /// <summary>
     /// Interaction logic for Donation.xaml

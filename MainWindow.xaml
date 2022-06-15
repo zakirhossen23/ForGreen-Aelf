@@ -4,10 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:DemeterGift_Aelf"
-        xmlns:Layout="clr-namespace:DemeterGift_Aelf.Componenet.Layout" x:Class="DemeterGift_Aelf.MainWindow"
+        xmlns:local="clr-namespace:ForGreen_Aelf"
+        xmlns:Layout="clr-namespace:ForGreen_Aelf.Componenet.Layout" x:Class="ForGreen_Aelf.MainWindow"
         mc:Ignorable="d"
-        Title="DemeterGift" Height="700" Width="1200" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/Resources/favicon.png">
+        Title="ForGreen" Height="700" Width="1200" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/Resources/favicon.png">
     <Grid Background="#121F29" >
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>

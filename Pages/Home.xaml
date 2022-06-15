@@ -1,9 +1,9 @@
-﻿<Page x:Class="DemeterGift_Aelf.Pages.Home"
+﻿<Page x:Class="ForGreen_Aelf.Pages.Home"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:DemeterGift_Aelf.Pages"
+      xmlns:local="clr-namespace:ForGreen_Aelf.Pages"
       mc:Ignorable="d" 
       Title="Home">
     <ScrollViewer>
@@ -18,7 +18,7 @@
                     <Image Source="/Resources/favicon.png" Height="300" />
                     <StackPanel Margin="0,20,0,0">
                         <TextBlock FontWeight="Bold" Text="A gift with a story" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
-                        <TextBlock  Text="DemeterGift creates the most easy, transparent and fun NFT charity auction on Web3" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+                        <TextBlock  Text="ForGreen creates the most easy, transparent and fun NFT charity auction on Web3" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
                         <Button Content="Let's Donate!" BorderThickness="0" FontSize="25" Background="#ECC900" Width="180" Height="70"/>

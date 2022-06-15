@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AElf.Client.Service;
 
-namespace DemeterGift_Aelf
+namespace ForGreen_Aelf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

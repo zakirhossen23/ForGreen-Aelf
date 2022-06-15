@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <RootNamespace>DemeterGift_Aelf</RootNamespace>
+    <RootNamespace>ForGreen_Aelf</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
@@ -36,8 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="DemeterGift">
-      <HintPath>Dll\DemeterGift.dll</HintPath>
+    <Reference Include="ForGreen">
+      <HintPath>Dll\ForGreen.dll</HintPath>
     </Reference>
   </ItemGroup>
 
