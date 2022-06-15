@@ -26,7 +26,7 @@ namespace DemeterGift_Aelf
             InitializeComponent();
         }
 
-        AElfClient client = new AElfClient("https://tdvv-test-node.aelf.io");
+        AElfClient client = new AElfClient("https://tdvw-test-node.aelf.io");
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

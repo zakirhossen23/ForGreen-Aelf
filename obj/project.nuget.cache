@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "POg4g/iiPHy563CM5Ja/U0/dDl3RwrBt85DIZreuY3SLnG1GxYfVm2MRVFlVOQFi6ft+btCNG8TrhDTP14fvfw==",
+  "dgSpecHash": "KzETKm7SI3NyVAUDVev15/gWagOxKN4HD7FA7v1RM3BChtE8mwuuWKIIKPQlLh+dcF3TVTQIGLPZXDI0W5reYA==",
   "success": true,
   "projectFilePath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\DemeterGift Aelf.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\zakir\\.nuget\\packages\\aelf.kernel.smartcontract.shared\\1.0.0\\aelf.kernel.smartcontract.shared.1.0.0.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\aelf.sdk.csharp\\1.0.0\\aelf.sdk.csharp.1.0.0.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\aelf.types\\1.0.0\\aelf.types.1.0.0.nupkg.sha512",
-    "C:\\Users\\zakir\\.nuget\\packages\\facebook\\7.0.6\\facebook.7.0.6.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\google.protobuf\\3.21.0\\google.protobuf.3.21.0.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
@@ -103,16 +102,5 @@
     "C:\\Users\\zakir\\.nuget\\packages\\virgil.crypto\\2.4.10\\virgil.crypto.2.4.10.nupkg.sha512",
     "C:\\Users\\zakir\\.nuget\\packages\\virgil.cryptoapi\\1.0.2\\virgil.cryptoapi.1.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Facebook 7.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Facebook",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

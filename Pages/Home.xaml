@@ -35,7 +35,7 @@
                
                 <StackPanel  Margin="0,20,0,0">
                     <Image VerticalAlignment="Top" Margin="0,20,0,0" Source="/Resources/CharityText.png" Height="180" />
-                    <Button Content="Let's Donate!"  Margin="0,20,0,0" BorderThickness="0"  Foreground="Yellow" FontSize="25" Background="#0B2435" Width="180" Height="70"/>
+                    <Button Content="Create Event"  Margin="0,20,0,0" BorderThickness="0"  Foreground="Yellow" FontSize="25" Background="#0B2435" Width="180" Height="70"/>
                 </StackPanel>
             </Grid>
         </Grid>

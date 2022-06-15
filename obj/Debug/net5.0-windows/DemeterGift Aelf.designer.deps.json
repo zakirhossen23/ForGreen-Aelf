@@ -83,14 +83,6 @@
           }
         }
       },
-      "Facebook/7.0.6": {
-        "runtime": {
-          "lib/net45/Facebook.dll": {
-            "assemblyVersion": "6.0.10.0",
-            "fileVersion": "7.0.6.0"
-          }
-        }
-      },
       "Google.Protobuf/3.21.0": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -1434,13 +1426,6 @@
       "sha512": "sha512-Pf+bpMxIkrYibUZgtA7cyMbEWOW/skJhdG0l7KJgAYw7IVhAZq2iDIftsbpZF9MW1MIrbwk/FPT3y71eSiM73g==",
       "path": "aelf.types/1.0.0",
       "hashPath": "aelf.types.1.0.0.nupkg.sha512"
-    },
-    "Facebook/7.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-D9nlWZb88S4U+eh1pUDQ+AkSkiht6m0eFpxKFddZnQSSFTnncvDMBEnNODy4fOIOjWQIiOXRVbuY04jCPyWqkw==",
-      "path": "facebook/7.0.6",
-      "hashPath": "facebook.7.0.6.nupkg.sha512"
     },
     "Google.Protobuf/3.21.0": {
       "type": "package",

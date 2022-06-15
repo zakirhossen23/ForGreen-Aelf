@@ -241,3 +241,5 @@ H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\DemeterGift A
 H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\DemeterGift Aelf.genruntimeconfig.cache
 H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\ref\DemeterGift Aelf.dll
 H:\Codes\DemeterGiftAelf\DemeterGift Aelf\bin\Debug\net5.0-windows\DemeterGift.dll
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Componenet\EventFormat.g.cs
+H:\Codes\DemeterGiftAelf\DemeterGift Aelf\obj\Debug\net5.0-windows\Componenet\EventFormat.baml

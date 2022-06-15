@@ -16,10 +16,10 @@ namespace DemeterGift_Aelf.Classes
 {
     internal class contract
     {
-        string tokenContractAddress = "2dtnkWDyJJXeDRcREhKSZHrYdDGMbn3eus5KYpXonfoTygFHZm";
+        string tokenContractAddress = "2KPGMPMgusmR4Vs9FbtHmvNuikpkUfCwrK5CTANv9N4gU9fTNx";
         string privatekey = "aabb7f566f8f7c2d9f6ca79c45a160d6f015cccca8d29fbb367d78c7e0111113";
 
-        AElfClient client = new AElfClient("https://tdvv-test-node.aelf.io");
+        AElfClient client = new AElfClient("https://tdvw-test-node.aelf.io");
         #region "Main Important"
         public static string FromHexString(string hexString)
         {
@@ -46,6 +46,25 @@ namespace DemeterGift_Aelf.Classes
 
             var ownerAddress = client.GetAddressFromPrivateKey(privatekey);
 
+            // Generate a transfer transaction.
+            var transaction = await client.GenerateTransactionAsync(ownerAddress, tokenContractAddress, methodName, param);
+
+            var txWithSign = client.SignTransaction(privatekey, transaction);
+
+
+            // Send the transfer transaction to AElf chain node.
+            var result = await client.ExecuteTransactionAsync(new ExecuteTransactionDto
+            {
+                RawTransaction = txWithSign.ToByteArray().ToHex()
+            });
+            return result.ToString();
+
+        }
+
+        public async Task<string> SendTransContract(string methodName, IMessage param)
+        {
+
+            var ownerAddress = client.GetAddressFromPrivateKey(privatekey);
 
             // Generate a transfer transaction.
             var transaction = await client.GenerateTransactionAsync(ownerAddress, tokenContractAddress, methodName, param);
@@ -60,12 +79,11 @@ namespace DemeterGift_Aelf.Classes
             });
             // After the transaction is mined, query the execution results.
             await Task.Delay(3000);
-            var transactionResult = await client.GetTransactionResultAsync(result.TransactionId);
-            var jsonFormat = FromHexString(transactionResult.ReturnValue);
-            
-            return jsonFormat.ToString();
+
+            return result.ToString();
 
         }
+
 
         public async Task<string> GetWalletAddress()
         {
@@ -76,13 +94,15 @@ namespace DemeterGift_Aelf.Classes
 
         public async Task<string> Testing()
         {
-            return await CallContract("Hello", new Empty());
+            string hexString = await CallContract("Hello", new Empty());
+            string result =  StringValue.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Value;
+            return result;
         }
 
         public async Task<string> CreateEvent(Dictionary<string,string> eventURI)
         {
             var inJsonFormat = MyDictionaryToJson(eventURI);
-            return await CallContract("CreateEvent", new StringValue{ Value = inJsonFormat.ToString() });
+            return await SendTransContract("CreateEvent", new StringValue{ Value = inJsonFormat.ToString() });
         }
 
         public async Task<string> CreateToken(string EventID, string TokenURI)
@@ -97,5 +117,20 @@ namespace DemeterGift_Aelf.Classes
         }
 
 
+        public async Task<List<ShortViews.EventDetails>> GetAllEvent()
+        {
+            List<ShortViews.EventDetails> all = new List<ShortViews.EventDetails>();
+            string hexString = await CallContract("getTotalEvent", new Empty());
+            string result = StringValue.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Value;
+            int allTotalEvent = int.Parse(result);
+            for (int i = 0; i < allTotalEvent; i++)
+            {
+                string hexString2 = await CallContract("getOneEvent", new StringValue { Value = i.ToString() });
+                string result2 = StringValue.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString2)).Value;
+                ShortViews.EventDetails eventDetails = new ShortViews.EventDetails(result2, i);
+                all.Add(eventDetails);
+            }
+            return all;
+        }
     }
 }

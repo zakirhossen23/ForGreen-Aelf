@@ -20,7 +20,6 @@
     <PackageReference Include="AElf.Cryptography" Version="1.0.0" />
     <PackageReference Include="AElf.Sdk.CSharp" Version="1.0.0" />
     <PackageReference Include="AElf.Types" Version="1.0.0" />
-    <PackageReference Include="Facebook" Version="7.0.6" />
     <PackageReference Include="Google.Protobuf" Version="3.21.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

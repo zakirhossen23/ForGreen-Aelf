@@ -30,8 +30,18 @@ namespace DemeterGift_Aelf.Pages
         }
         private async void GetContract()
         {
-          Console.WriteLine(  await contract.Testing());
+            
+            List<ShortViews.EventDetails> eventDetails = await contract.GetAllEvent();
+            EventContainer.Children.RemoveAt(0);
+            for (int i = 0; i < eventDetails.Count; i++)
+            {
+                var element = eventDetails[i];
+                Componenet.EventFormat eventFormat = new Componenet.EventFormat();
+                eventFormat.setEventFormat(element.id,element.title,element.enddate, element.price.ToString(),element.logo, element.wallet);
+                EventContainer.Children.Add(eventFormat);
+            }
 
         }
+
     }
 }

@@ -62,7 +62,7 @@ namespace DemeterGift_Aelf {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DemeterGift Aelf;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

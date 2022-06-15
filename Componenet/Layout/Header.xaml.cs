@@ -49,24 +49,31 @@ namespace DemeterGift_Aelf.Componenet.Layout
 
         private async void loadAddressAndBalance()
         {
-            string address = client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
-            AddressTXT.Text = address.Substring(0,15)+"...";
-            var url = "https://tdvv-explorer-test.aelf.io/api/viewer/balances?address="+ address;
-
-            var httpRequest = (HttpWebRequest)WebRequest.Create(url);
-
-
-            var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            try
             {
-                var result = streamReader.ReadToEnd();
-                JToken root = JObject.Parse(result);
-                JToken data = root.Last();
-                JToken dataBalance = JToken.Parse(data.Last.ToString());
-                var balance =((JValue)((JProperty)((JContainer)((JContainer)dataBalance).First).Last).Value).Value;
-                BalanceTXT.Text =  (float.Parse( balance.ToString())).ToString() + " ELF";
-            }
+                string address = client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
+                AddressTXT.Text = address.Substring(0, 15) + "...";
+                var url = "https://explorer-test-side02.aelf.io/api/viewer/balances?address=" + address;
 
+                var httpRequest = (HttpWebRequest)WebRequest.Create(url);
+
+
+                var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                    JToken root = JObject.Parse(result);
+                    JToken data = root.Last();
+                    JToken dataBalance = JToken.Parse(data.Last.ToString());
+                    var balance = ((JValue)((JProperty)((JContainer)((JContainer)dataBalance).First).Last).Value).Value;
+                    BalanceTXT.Text = (float.Parse(balance.ToString())).ToString() + " ELF";
+                }
+
+            }
+            catch (Exception)
+            {
+      }
+          
         }
 
         public void homeBTN_MouseDown(object sender, MouseButtonEventArgs e)
@@ -96,6 +103,7 @@ namespace DemeterGift_Aelf.Componenet.Layout
 
         private void donationBTN_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            
             Pages.Donation donation = new Pages.Donation();
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.MainFrame.Navigate(donation);
