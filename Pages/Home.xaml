@@ -16,13 +16,14 @@
             <Grid Grid.Row="0">
                 <StackPanel>
                     <Image Source="/Resources/favicon.png" Height="300" />
-                    <StackPanel Margin="0,20,0,0">
+                    <StackPanel Margin="0,10,0,0">
                         <TextBlock FontWeight="Bold" Text="A gift with a story" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
-                        <TextBlock  Text="ForGreen creates the most easy, transparent and fun NFT charity auction on Web3" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+                        <TextBlock  Text="Donation events as a service, to create the most easy, transparent and fun NFT charity auction," FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+                        <TextBlock  Text="by using the power of DeFi to help organizations raise additional support for a green world." FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
-                        <Button Content="Let's Donate!" BorderThickness="0" FontSize="25" Background="#ECC900" Width="180" Height="70"/>
-
+                        <Button Content="Let's Donate!" BorderThickness="0" FontSize="25" Background="#ECC900" Width="180" Height="70" Name="DonateBTN" Click="DonateBTN_Click"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>
@@ -35,7 +36,7 @@
                
                 <StackPanel  Margin="0,20,0,0">
                     <Image VerticalAlignment="Top" Margin="0,20,0,0" Source="/Resources/CharityText.png" Height="180" />
-                    <Button Content="Create Event"  Margin="0,20,0,0" BorderThickness="0"  Foreground="Yellow" FontSize="25" Background="#0B2435" Width="180" Height="70"/>
+                    <Button Content="Create Event"  Margin="0,20,0,0" BorderThickness="0"  Foreground="Yellow" FontSize="25" Background="#0B2435" Width="180" Height="70" Name="CreateEventBTN" Click="CreateEventBTN_Click"/>
                 </StackPanel>
             </Grid>
         </Grid>

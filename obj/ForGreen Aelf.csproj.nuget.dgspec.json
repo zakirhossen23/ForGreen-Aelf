@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj": {}
+    "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj": {}
   },
   "projects": {
-    "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj": {
+    "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj",
+        "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj",
         "projectName": "ForGreen Aelf",
-        "projectPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\ForGreen Aelf.csproj",
+        "projectPath": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj",
         "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
-        "outputPath": "H:\\Codes\\DemeterGiftAelf\\DemeterGift Aelf\\obj\\",
+        "outputPath": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

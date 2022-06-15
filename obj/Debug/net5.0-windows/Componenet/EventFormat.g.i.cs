@@ -85,7 +85,7 @@ namespace ForGreen_Aelf.Componenet {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;V1.0.0.0;component/componenet/eventformat.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;component/componenet/eventformat.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Componenet\EventFormat.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

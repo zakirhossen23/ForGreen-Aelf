@@ -93,7 +93,7 @@ namespace ForGreen_Aelf.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;V1.0.0.0;component/pages/createevents.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;component/pages/createevents.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\CreateEvents.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

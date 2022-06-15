@@ -36,7 +36,7 @@ namespace ForGreen_Aelf.Componenet
             timeLefting();
 
             this.goal = goal;
-            this.GoalTXT.Text = goal;
+            this.GoalTXT.Text = $"Goal: {goal} aelf";
             this.logo = logo;
             this.DataContext = logo;
 

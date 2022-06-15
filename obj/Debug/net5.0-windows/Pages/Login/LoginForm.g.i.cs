@@ -77,7 +77,7 @@ namespace ForGreen_Aelf.Pages.Login {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;V1.0.0.0;component/pages/login/loginform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ForGreen Aelf;component/pages/login/loginform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Pages\Login\LoginForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
