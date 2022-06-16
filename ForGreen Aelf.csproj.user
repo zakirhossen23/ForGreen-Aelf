@@ -10,7 +10,13 @@
     <Compile Update="Componenet\Layout\Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Componenet\Modal\BidNFTModal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Componenet\Modal\DonateNFTModel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Componenet\Modal\ViewBidModal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Componenet\NFTFormat.xaml.cs">
@@ -36,7 +42,13 @@
     <Page Update="Componenet\Layout\Header.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Componenet\Modal\BidNFTModal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Componenet\Modal\DonateNFTModel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componenet\Modal\ViewBidModal.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Componenet\NFTFormat.xaml">

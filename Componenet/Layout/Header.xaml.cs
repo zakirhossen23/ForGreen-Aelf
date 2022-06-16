@@ -37,6 +37,10 @@ namespace ForGreen_Aelf.Componenet.Layout
             {
                 AddressPanel.Visibility = Visibility.Visible;
                 LoginPanel.Visibility = Visibility.Hidden;
+                System.Timers.Timer timer = new System.Timers.Timer();
+                timer.Elapsed += Timer_Elapsed;
+                timer.Interval = 1000;
+                timer.Start();
                 loadAddressAndBalance();
             }
             else
@@ -45,6 +49,16 @@ namespace ForGreen_Aelf.Componenet.Layout
                 LoginPanel.Visibility = Visibility.Visible;
             }
         }
+
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            this.Dispatcher.InvokeAsync(new Action(() =>
+            {
+                loadAddressAndBalance();
+            }));
+
+        }
+
         AElfClient client = new AElfClient("https://aelf-test-node.aelf.io");
 
         private async void loadAddressAndBalance()

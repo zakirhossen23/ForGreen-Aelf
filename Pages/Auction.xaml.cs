@@ -57,7 +57,7 @@ namespace ForGreen_Aelf.Pages
             {
                 var element = nftDetails[i];
                 Componenet.NFTFormat nFTFormat = new Componenet.NFTFormat();
-                nFTFormat.setNFTFormat(element.id, element.title, element.descrition, this.enddate, element.price, element.logo);
+                nFTFormat.setNFTFormat(element.id, element.title, element.descrition, this.enddate, element.price, element.logo, this.wallet);
                 nFTFormat.Margin = new Thickness(0, 0, 0, 5);
                 NFTContainer.Children.Add(nFTFormat);
                 totalEarned += element.price;

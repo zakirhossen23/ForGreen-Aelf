@@ -23,8 +23,8 @@
             </StackPanel>
 
             <StackPanel  Margin="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
-                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Content="View"></Button>
-                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Content="Bid"></Button>
+                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Content="View" Click="Button_Click"></Button>
+                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Name="BidBTN" Content="Bid" Click="BidBTN_Click"></Button>
             </StackPanel>
         </Grid>
     </Grid>

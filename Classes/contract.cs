@@ -91,6 +91,35 @@ namespace ForGreen_Aelf.Classes
 
             return walletAddress;
         }
+        public async Task sendMoney(string wallet, double amount, string memo)
+        {
+
+            // Get token contract address.
+            var tokenContractAddress = await client.GetContractAddressByNameAsync(HashHelper.ComputeFrom("AElf.ContractNames.Token"));
+
+            var methodName = "Transfer";
+            var param = new AElf.Client.MultiToken.TransferInput
+            {
+                To = new AElf.Client.Proto.Address { Value = Address.FromBase58("2epyMZVwqC2hCJNTaUDGuhgFoJ578TMnAcxkegy7WxxS2sWvpM").Value },
+                Symbol = "ELF",
+                Amount = (long)(amount * 100000000),
+                Memo = memo                
+            };
+            var ownerAddress = client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
+
+            // Generate a transfer transaction.
+            var transaction = await client.GenerateTransactionAsync(ownerAddress, tokenContractAddress.ToBase58(), methodName, param);
+            var txWithSign = client.SignTransaction(Properties.Settings.Default.PrivateKey, transaction);
+
+            // Send the transfer transaction to AElf chain node.
+            var result = await client.SendTransactionAsync(new SendTransactionInput
+            {
+                RawTransaction = txWithSign.ToByteArray().ToHex()
+            });
+
+            Console.WriteLine(result);
+            await Task.Delay(4000);
+        }
 
         public async Task<string> Testing()
         {
@@ -114,6 +143,18 @@ namespace ForGreen_Aelf.Classes
                 TokenURI = inJsonFormat
             };
             return await SendTransContract("InsertAllEventToken", Input);
+        }
+
+
+        public async Task<string> CreateBid(string TokenID, Dictionary<string, string> BidURI)
+        {
+            var inJsonFormat = MyDictionaryToJson(BidURI);
+            InsertTokenBidInput Input = new InsertTokenBidInput
+            {
+                TokenID = TokenID,
+                BidURI = inJsonFormat
+            };
+            return await SendTransContract("InsertAllTokenBid", Input);
         }
 
 
@@ -148,6 +189,26 @@ namespace ForGreen_Aelf.Classes
                 {
                     ShortViews.NFTdetails nftDetails = new ShortViews.NFTdetails(result2, TokenID);
                     all.Add(nftDetails);
+                }
+
+            }
+            return all;
+        }
+
+        public async Task<List<ShortViews.BidDetails>> GetAllBidByTokenID(int tokenID)
+        {
+            List<ShortViews.BidDetails> all = new List<ShortViews.BidDetails>();
+            string hexString = await CallContract("SearchAllBidByTokenID", new StringValue { Value = tokenID.ToString() });
+
+            Google.Protobuf.Collections.RepeatedField<string> result = SearchedListBids.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Bids;
+
+            for (int i = 0; i < result.Count; i++)
+            {
+                string result2 = result[i];
+                if (result2 != "")
+                {
+                    ShortViews.BidDetails bidDetails = new ShortViews.BidDetails(result2);
+                    all.Add(bidDetails);
                 }
 
             }

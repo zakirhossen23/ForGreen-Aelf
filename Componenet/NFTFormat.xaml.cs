@@ -25,7 +25,7 @@ namespace ForGreen_Aelf.Componenet
         {
             InitializeComponent();
         }
-        public void setNFTFormat(int id,string title,string descrition, DateTime enddate,float price,string logo)
+        public void setNFTFormat(int id,string title,string descrition, DateTime enddate,float price,string logo, string wallet)
         {
             this.id = id;
             this.title = title;
@@ -38,6 +38,7 @@ namespace ForGreen_Aelf.Componenet
             this.PriceTXT.Text = $"{price} AELF";
             this.logo = logo;
             this.DataContext = logo;
+            this.wallet = wallet;
             System.Timers.Timer timer = new System.Timers.Timer();
             timer.Interval = 1000;
             timer.Elapsed += Timer_Elapsed;
@@ -64,5 +65,22 @@ namespace ForGreen_Aelf.Componenet
         public DateTime enddate;
         public float price;
         public string logo;
+        public string wallet;
+
+        private void BidBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Componenet.Modal.BidNFT bidNFTModel = new Componenet.Modal.BidNFT();
+            bidNFTModel.setBidNFT(this.id, this.price, this.wallet, this.title);
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.mainGrid.Children.Add(bidNFTModel);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Componenet.Modal.ViewBidModal viewNFTModel = new Componenet.Modal.ViewBidModal();
+            viewNFTModel.setViewBidModal(this.id);
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.mainGrid.Children.Add(viewNFTModel);
+        }
     }
 }
