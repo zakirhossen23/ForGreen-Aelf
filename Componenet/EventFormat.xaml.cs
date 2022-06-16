@@ -61,5 +61,14 @@ namespace ForGreen_Aelf.Componenet
                 this.leftDateTXT.Text = $"{currentLeft.Days} Days {currentLeft.Hours} hours {currentLeft.Minutes} minutes {currentLeft.Seconds} seconds";
             }));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Componenet.Modal.DonateNFTModel donateNFTModel = new Componenet.Modal.DonateNFTModel();
+            donateNFTModel.setDonateNFTModel(this.id,this.title);
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.mainGrid.Children.Add(donateNFTModel);
+            
+        }
     }
 }

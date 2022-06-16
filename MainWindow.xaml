@@ -8,14 +8,17 @@
         xmlns:Layout="clr-namespace:ForGreen_Aelf.Componenet.Layout" x:Class="ForGreen_Aelf.MainWindow"
         mc:Ignorable="d"
         Title="ForGreen" Height="700" Width="1200" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="/Resources/favicon.png">
-    <Grid Background="#121F29" >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Grid Name="mainGrid" Background="#121F29" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Layout:Header x:Name="HeaderLayout" VerticalAlignment="Center" Height="70" />
-        <Frame x:Name="MainFrame" Grid.Row="1"  NavigationUIVisibility="Hidden" />
+            <Layout:Header x:Name="HeaderLayout" VerticalAlignment="Center" Height="70" />
+            <Frame x:Name="MainFrame" Grid.Row="1"  NavigationUIVisibility="Hidden" />
 
+        </Grid>
+       
     </Grid>
 </Window>

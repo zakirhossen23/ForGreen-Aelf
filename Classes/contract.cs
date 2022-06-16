@@ -105,15 +105,15 @@ namespace ForGreen_Aelf.Classes
             return await SendTransContract("CreateEvent", new StringValue{ Value = inJsonFormat.ToString() });
         }
 
-        public async Task<string> CreateToken(string EventID, string TokenURI)
+        public async Task<string> CreateToken(string EventID, Dictionary<string, string> TokenURI)
         {
-
+            var inJsonFormat = MyDictionaryToJson(TokenURI);
             InsertEventTokenInput Input = new InsertEventTokenInput
             {
                 EventID = EventID,
-                TokenURI = TokenURI
+                TokenURI = inJsonFormat
             };
-            return await CallContract("InsertAllEventToken", Input);
+            return await SendTransContract("InsertAllEventToken", Input);
         }
 
 

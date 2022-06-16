@@ -10,6 +10,9 @@
     <Compile Update="Componenet\Layout\Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Componenet\Modal\DonateNFTModel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Donation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Componenet\Layout\Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Componenet\Modal\DonateNFTModel.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

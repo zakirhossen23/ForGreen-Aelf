@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="ForGreen_Aelf.Componenet.Modal.DonateNFTModel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ForGreen_Aelf.Componenet.Modal"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             >
+    <Grid>
+        <Rectangle Fill="Black"  Opacity=".8" MouseDown="Rectangle_MouseDown" />
+        <Border CornerRadius="3" Background="White" Width="600" Height="560">
+            <Grid Background="#0b2435" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border  BorderThickness=".5" Background="White"  BorderBrush="LightGray">
+                
+                    <Grid Margin="5" >
+                        <TextBlock VerticalAlignment="Center" FontSize="20" Name="HeaderTitle" Text="Donate NFT"/>
+                        <Button HorizontalAlignment="Right" Background="#012033" Content="X" Margin="0,4,0,3" Width="41" Click="Button_Click"></Button>
+                    </Grid>
+                </Border>
+
+                <StackPanel Grid.Row="1" Margin="20">
+                    <StackPanel Margin="0,0,0,15" >
+                        <TextBlock Text="Name" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
+                        <Border CornerRadius="2" Background="White">
+                            <TextBox Name="nameTXT" Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,15" >
+                        <TextBlock Text="Description" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
+                        <Border CornerRadius="2" Background="White">
+                            <TextBox Name="descriptionTXT" Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,15" >
+                        <TextBlock Text="Opening price in Aelf" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
+                        <Border CornerRadius="2" Background="White">
+                            <TextBox Name="priceTXT"  Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,15" >
+                        <TextBlock Text="Enter image URL" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
+                        <Border CornerRadius="2" Background="White">
+                            <TextBox Name="logoTXT" Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,15" >
+                        <TextBlock Text="NFT address" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
+                        <Border CornerRadius="2" Background="White">
+                            <TextBox Name="nftAddressTXT"  Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                        </Border>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,15" >
+                        <Button Content="Donate NFT" FontSize="20" Height="40" Name="DonateBTN" Background="#0d6efd" Click="DonateBTN_Click">
+                            
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
