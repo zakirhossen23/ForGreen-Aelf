@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\App.xaml
-9-1716259887
+11-1317970321
 61295736325
-16-564076925
+19-1702121349
 2102057855238
-Componenet\EventFormat.xaml;Componenet\Layout\Header.xaml;Componenet\Modal\DonateNFTModel.xaml;MainWindow.xaml;Pages\CreateEvents.xaml;Pages\Donation.xaml;Pages\Home.xaml;Pages\Login\LoginForm.xaml;Pages\Login\LoginSelector.xaml;
+Componenet\EventFormat.xaml;Componenet\Layout\Header.xaml;Componenet\Modal\DonateNFTModel.xaml;Componenet\NFTFormat.xaml;MainWindow.xaml;Pages\Auction.xaml;Pages\CreateEvents.xaml;Pages\Donation.xaml;Pages\Home.xaml;Pages\Login\LoginForm.xaml;Pages\Login\LoginSelector.xaml;
 
 True
 

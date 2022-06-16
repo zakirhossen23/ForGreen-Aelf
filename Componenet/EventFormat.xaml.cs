@@ -62,13 +62,21 @@ namespace ForGreen_Aelf.Componenet
             }));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void DonateBTN_Click(object sender, RoutedEventArgs e)
         {
             Componenet.Modal.DonateNFTModel donateNFTModel = new Componenet.Modal.DonateNFTModel();
-            donateNFTModel.setDonateNFTModel(this.id,this.title);
+            donateNFTModel.setDonateNFTModel(this.id, this.title);
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.mainGrid.Children.Add(donateNFTModel);
-            
+        }
+
+        private void AuctionBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Pages.Auction auction = new Pages.Auction();
+            auction.setAuction(id, title, "", enddate, int.Parse(goal), logo, wallet);
+            MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+            mainWindow.MainFrame.Navigate(auction);
         }
     }
 }

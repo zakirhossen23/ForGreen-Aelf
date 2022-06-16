@@ -16,7 +16,7 @@ namespace ForGreen_Aelf.Classes
 {
     internal class contract
     {
-        string tokenContractAddress = "2KPGMPMgusmR4Vs9FbtHmvNuikpkUfCwrK5CTANv9N4gU9fTNx";
+        string tokenContractAddress = "2KRHY1oZv5S28YGRJ3adtMxfAh7WQP3wmMyoFq33oTc7Mt5Z1Y";
         string privatekey = "aabb7f566f8f7c2d9f6ca79c45a160d6f015cccca8d29fbb367d78c7e0111113";
 
         AElfClient client = new AElfClient("https://tdvw-test-node.aelf.io");
@@ -35,7 +35,7 @@ namespace ForGreen_Aelf.Classes
         string MyDictionaryToJson(Dictionary<string, string> dict)
         {
             var entries = dict.Select(d =>
-                string.Format("\"{0}\": \"{1}\"", d.Key,  d.Value));
+                string.Format("\"{0}\": \"{1}\"", d.Key, d.Value));
             return "{" + string.Join(",", entries) + "}";
         }
 
@@ -87,7 +87,7 @@ namespace ForGreen_Aelf.Classes
 
         public async Task<string> GetWalletAddress()
         {
-            var walletAddress =  client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
+            var walletAddress = client.GetAddressFromPrivateKey(Properties.Settings.Default.PrivateKey);
 
             return walletAddress;
         }
@@ -95,14 +95,14 @@ namespace ForGreen_Aelf.Classes
         public async Task<string> Testing()
         {
             string hexString = await CallContract("Hello", new Empty());
-            string result =  StringValue.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Value;
+            string result = StringValue.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Value;
             return result;
         }
 
-        public async Task<string> CreateEvent(Dictionary<string,string> eventURI)
+        public async Task<string> CreateEvent(Dictionary<string, string> eventURI)
         {
             var inJsonFormat = MyDictionaryToJson(eventURI);
-            return await SendTransContract("CreateEvent", new StringValue{ Value = inJsonFormat.ToString() });
+            return await SendTransContract("CreateEvent", new StringValue { Value = inJsonFormat.ToString() });
         }
 
         public async Task<string> CreateToken(string EventID, Dictionary<string, string> TokenURI)
@@ -132,5 +132,27 @@ namespace ForGreen_Aelf.Classes
             }
             return all;
         }
+
+        public async Task<List<ShortViews.NFTdetails>> GetAllNFTbyEventID(int EventID)
+        {
+            List<ShortViews.NFTdetails> all = new List<ShortViews.NFTdetails>();
+            string hexString = await CallContract("SearchAllTokenByEventID", new StringValue { Value = EventID.ToString() });
+
+            int TokenID = SearchedList.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).TokenID;
+            Google.Protobuf.Collections.RepeatedField<string> result = SearchedList.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Tokens;
+
+            for (int i = 0; i < result.Count; i++)
+            {
+                string result2 = result[i];
+                if (result2 != "")
+                {
+                    ShortViews.NFTdetails nftDetails = new ShortViews.NFTdetails(result2, TokenID);
+                    all.Add(nftDetails);
+                }
+
+            }
+            return all;
+        }
+
     }
 }

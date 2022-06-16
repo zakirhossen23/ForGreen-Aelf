@@ -17,8 +17,8 @@
                         <TextBlock Margin="0,10" Name="GoalTXT" Text="Goal: 300 Aelf" FontWeight="Medium" FontSize="20"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="red" >
-                        <Button  Background="#00decd" Foreground="White" HorizontalAlignment="Right" Height="50" Width="150"  FontSize="15" Content="Donate NFT" Click="Button_Click"></Button>
-                        <Button  Background="#00decd" Foreground="White" HorizontalAlignment="Right" Height="50" Width="150" FontSize="15" Content="Go to Auction"></Button>
+                        <Button  Background="#00decd" Foreground="White" HorizontalAlignment="Right" Height="50" Width="150"  FontSize="15" Content="Donate NFT" Name="DonateBTN" Click="DonateBTN_Click"></Button>
+                        <Button  Background="#00decd" Foreground="White" HorizontalAlignment="Right" Height="50" Width="150" FontSize="15" Content="Go to Auction" Name="AuctionBTN" Click="AuctionBTN_Click"></Button>
                     </StackPanel>
                 </Grid>
                

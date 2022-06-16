@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="ForGreen_Aelf.Componenet.NFTFormat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ForGreen_Aelf.Componenet"
+             mc:Ignorable="d" >
+    <Grid Background="White">
+        <Grid MinWidth="700">
+            <StackPanel Orientation="Horizontal">
+                <Image Margin="10" Source="{Binding}" Width="220" MinHeight="200"></Image>
+                <Grid >
+                    <StackPanel Margin="0,25">
+                        <TextBlock FontSize="25" x:Name="TitleTXT" Text="NFT #534"></TextBlock>
+                        <TextBlock FontSize="20" x:Name="DescriptionTXT" Foreground="Gray" Text="NFT #534"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="0,25" VerticalAlignment="Bottom">
+                        <TextBlock FontSize="15" Foreground="Gray" Text="Current bid"></TextBlock>
+                        <TextBlock FontSize="25" x:Name="PriceTXT"  Foreground="Black" Text="0.00 AELF"></TextBlock>
+                        <TextBlock FontSize="15" x:Name="leftDateTXT" Foreground="Gray" Text="0d 0h 00m 0s"></TextBlock>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel  Margin="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Content="View"></Button>
+                <Button Height="50" Width="150" Background="#00decd" FontSize="25" Content="Bid"></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
