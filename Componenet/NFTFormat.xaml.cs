@@ -24,6 +24,7 @@ namespace ForGreen_Aelf.Componenet
         public NFTFormat()
         {
             InitializeComponent();
+            LoadNFT();
         }
         public int id;
         public int EventId;
@@ -60,6 +61,18 @@ namespace ForGreen_Aelf.Componenet
             timer.Start();
         }
 
+        public void LoadNFT()
+        {
+            if (Properties.Settings.Default.userType != "user")
+            {
+                BidBTN.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                BidBTN.Visibility = Visibility.Visible;
+            }
+
+        }
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             timeLefting();

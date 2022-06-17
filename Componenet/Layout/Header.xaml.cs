@@ -110,6 +110,7 @@ namespace ForGreen_Aelf.Componenet.Layout
             Properties.Settings.Default.LoggedIn = false;
             Properties.Settings.Default.PrivateKey = "";
             Properties.Settings.Default.Password = "";
+            Properties.Settings.Default.userType = "";
             Properties.Settings.Default.Save();
             Properties.Settings.Default.Reload();
             LoginBTNShow();

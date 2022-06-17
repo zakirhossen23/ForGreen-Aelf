@@ -23,9 +23,21 @@ namespace ForGreen_Aelf.Componenet
         public EventFormat()
         {
             InitializeComponent();
+            LoadAuction();
         }
         int id;
-        string title; DateTime enddate; string goal; string logo;  string wallet;
+        string title; DateTime enddate; string goal; string logo; string wallet;
+        public void LoadAuction()
+        {
+            if (Properties.Settings.Default.userType != "user")
+            {
+                DonateBTN.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                DonateBTN.Visibility = Visibility.Visible;
+            }
+        }
 
         public void setEventFormat(int id, string title, DateTime enddate, string goal, string logo, string wallet)
         {
@@ -49,8 +61,8 @@ namespace ForGreen_Aelf.Componenet
 
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-             timeLefting();
-         }
+            timeLefting();
+        }
 
         private void timeLefting()
         {

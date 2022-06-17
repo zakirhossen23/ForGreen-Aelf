@@ -20,7 +20,7 @@
                             <Image Name="logoIMG"  Source="{Binding}"   Margin="5" Stretch="Uniform"></Image>
                         </Border>
                         <Grid Grid.Column="1">
-                            <Border HorizontalAlignment="Center" Padding="25"  VerticalAlignment="Top" CornerRadius="15" Height="180" Background="White" Width="300">
+                            <Border HorizontalAlignment="Center" Padding="25"  VerticalAlignment="Top" CornerRadius="15" Background="White" Width="300">
                                 <StackPanel >
                                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="25">
                                         <TextBlock FontSize="20" x:Name="EarntAelf" HorizontalAlignment="Left" Text="0.00 Aelf" VerticalAlignment="Top"></TextBlock>

@@ -23,6 +23,19 @@ namespace ForGreen_Aelf.Pages
         public Auction()
         {
             InitializeComponent();
+            LoadButton();
+        }
+
+        public void LoadButton()
+        {
+            if (Properties.Settings.Default.userType != "user")
+            {
+                DonateNFTBTN.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                DonateNFTBTN.Visibility = Visibility.Visible;
+            }
         }
         Classes.contract contract = new Classes.contract();
         public int id;
