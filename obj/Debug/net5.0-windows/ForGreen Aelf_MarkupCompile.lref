@@ -2,7 +2,10 @@
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\App.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\EventFormat.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Layout\Header.xaml;;
+FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Modal\BidNFTModal.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Modal\DonateNFTModel.xaml;;
+FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Modal\ViewBidModal.xaml;;
+FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\NFTFormat.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\MainWindow.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\Auction.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\CreateEvents.xaml;;
@@ -10,7 +13,4 @@ FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\Donation.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\Home.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\Login\LoginForm.xaml;;
 FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Pages\Login\LoginSelector.xaml;;
-FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\NFTFormat.xaml;;
-FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Modal\BidNFTModal.xaml;;
-FH:\Codes\DemeterGiftAelf\ForGreen Aelf\Componenet\Modal\ViewBidModal.xaml;;
 

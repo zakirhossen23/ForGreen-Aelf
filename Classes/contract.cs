@@ -100,7 +100,7 @@ namespace ForGreen_Aelf.Classes
             var methodName = "Transfer";
             var param = new AElf.Client.MultiToken.TransferInput
             {
-                To = new AElf.Client.Proto.Address { Value = Address.FromBase58("2epyMZVwqC2hCJNTaUDGuhgFoJ578TMnAcxkegy7WxxS2sWvpM").Value },
+                To = new AElf.Client.Proto.Address { Value = Address.FromBase58(wallet).Value },//2epyMZVwqC2hCJNTaUDGuhgFoJ578TMnAcxkegy7WxxS2sWvpM
                 Symbol = "ELF",
                 Amount = (long)(amount * 100000000),
                 Memo = memo                
@@ -146,12 +146,15 @@ namespace ForGreen_Aelf.Classes
         }
 
 
-        public async Task<string> CreateBid(string TokenID, Dictionary<string, string> BidURI)
+        public async Task<string> CreateBid(int TokenID, int EventID, Dictionary<string, string> BidURI, string TokenURI)
         {
             var inJsonFormat = MyDictionaryToJson(BidURI);
+            var UpdatedURIinJsonFormat = TokenURI;
             InsertTokenBidInput Input = new InsertTokenBidInput
             {
                 TokenID = TokenID,
+                EventID = EventID,
+                UpdatedURI = UpdatedURIinJsonFormat,
                 BidURI = inJsonFormat
             };
             return await SendTransContract("InsertAllTokenBid", Input);
@@ -179,11 +182,12 @@ namespace ForGreen_Aelf.Classes
             List<ShortViews.NFTdetails> all = new List<ShortViews.NFTdetails>();
             string hexString = await CallContract("SearchAllTokenByEventID", new StringValue { Value = EventID.ToString() });
 
-            int TokenID = SearchedList.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).TokenID;
+        
             Google.Protobuf.Collections.RepeatedField<string> result = SearchedList.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).Tokens;
 
             for (int i = 0; i < result.Count; i++)
             {
+                int TokenID = SearchedList.Parser.ParseFrom(ByteArrayHelper.HexStringToByteArray(hexString)).TokenID[i];
                 string result2 = result[i];
                 if (result2 != "")
                 {

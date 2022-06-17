@@ -48,16 +48,21 @@ namespace ForGreen_Aelf.Pages
         }
 
 
-        public async void getAllNFTs()
+        public  async void getAllNFTs()
         {
             float totalEarned = 0;
             List<ShortViews.NFTdetails> nftDetails = await contract.GetAllNFTbyEventID(this.id);
-            NFTContainer.Children.RemoveAt(0);
+
+            int total = NFTContainer.Children.Count-1;
+            for (int i = total; i!=-1; i--)
+            {
+                NFTContainer.Children.RemoveAt(i);
+            }
             for (int i = 0; i < nftDetails.Count; i++)
             {
                 var element = nftDetails[i];
                 Componenet.NFTFormat nFTFormat = new Componenet.NFTFormat();
-                nFTFormat.setNFTFormat(element.id, element.title, element.descrition, this.enddate, element.price, element.logo, this.wallet);
+                nFTFormat.setNFTFormat(element.id, this.id, element.title, element.descrition, this.enddate, element.price, element.logo, this.wallet, element.ToString());
                 nFTFormat.Margin = new Thickness(0, 0, 0, 5);
                 NFTContainer.Children.Add(nFTFormat);
                 totalEarned += element.price;

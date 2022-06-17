@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj": {}
+  },
+  "projects": {
+    "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj",
+        "projectName": "ForGreen Aelf",
+        "projectPath": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\ForGreen Aelf.csproj",
+        "packagesPath": "C:\\Users\\zakir\\.nuget\\packages\\",
+        "outputPath": "H:\\Codes\\DemeterGiftAelf\\ForGreen Aelf\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "H:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\zakir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/aelf-project-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "AElf.Client": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "AElf.Cryptography": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Sdk.CSharp": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "AElf.Types": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.21.0, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Secp256k1.Native": {
+              "target": "Package",
+              "version": "[0.1.23, )"
+            },
+            "Secp256k1.Net": {
+              "target": "Package",
+              "version": "[0.1.55, )"
+            },
+            "System.Buffers": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "System.Numerics.Vectors": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Virgil.Crypto": {
+              "target": "Package",
+              "version": "[2.4.10, )"
+            },
+            "Virgil.CryptoAPI": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

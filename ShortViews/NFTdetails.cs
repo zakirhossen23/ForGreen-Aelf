@@ -11,12 +11,17 @@ namespace ForGreen_Aelf.ShortViews
     {
         public NFTdetails(string input, int idno)
         {
-            JToken parsed = JObject.Parse(input);
-            this.id = idno;
-            this.title = parsed.SelectToken("Name").ToString();
-            this.descrition = parsed.SelectToken("Description").ToString();
-            this.price = float.Parse(parsed.SelectToken("Price").ToString());
-            this.logo = parsed.SelectToken("Logo").ToString();
+            try
+            {
+                JToken parsed = JObject.Parse(input);
+                this.id = idno;
+                this.title = parsed.SelectToken("Name").ToString();
+                this.descrition = parsed.SelectToken("Description").ToString();
+                this.price = float.Parse(parsed.SelectToken("Price").ToString());
+                this.logo = parsed.SelectToken("Logo").ToString();
+            }
+            catch (Exception){}
+     
         }
 
         public int id;
@@ -24,5 +29,10 @@ namespace ForGreen_Aelf.ShortViews
         public string descrition;
         public float price;
         public string logo;
+
+        public override string ToString()
+        {
+            return "{\"Name\": \""+ title + "\",\"Description\": \""+ descrition + "\",\"Price\": \""+ price + "\",\"Logo\": \""+ logo + "\"}";
+        }
     }
 }

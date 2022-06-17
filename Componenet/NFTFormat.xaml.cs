@@ -25,9 +25,21 @@ namespace ForGreen_Aelf.Componenet
         {
             InitializeComponent();
         }
-        public void setNFTFormat(int id,string title,string descrition, DateTime enddate,float price,string logo, string wallet)
+        public int id;
+        public int EventId;
+        public string title;
+        public string descrition;
+        public DateTime enddate;
+        public float price;
+        public string logo;
+        public string wallet;
+        ShortViews.NFTdetails nFTdetails;
+        public string nftinJSON;
+
+        public void setNFTFormat(int id, int EventId, string title, string descrition, DateTime enddate, float price, string logo, string wallet, string nftinJSON )
         {
             this.id = id;
+            this.EventId = EventId;
             this.title = title;
             this.TitleTXT.Text = title;
             this.descrition = descrition;
@@ -39,6 +51,9 @@ namespace ForGreen_Aelf.Componenet
             this.logo = logo;
             this.DataContext = logo;
             this.wallet = wallet;
+            this.nftinJSON = nftinJSON;
+            nFTdetails = new ShortViews.NFTdetails(nftinJSON, id);
+
             System.Timers.Timer timer = new System.Timers.Timer();
             timer.Interval = 1000;
             timer.Elapsed += Timer_Elapsed;
@@ -59,18 +74,12 @@ namespace ForGreen_Aelf.Componenet
                 this.leftDateTXT.Text = $"{currentLeft.Days}d {currentLeft.Hours}h {currentLeft.Minutes}m {currentLeft.Seconds}s";
             }));
         }
-        public int id;
-        public string title;
-        public string descrition;
-        public DateTime enddate;
-        public float price;
-        public string logo;
-        public string wallet;
+     
 
         private void BidBTN_Click(object sender, RoutedEventArgs e)
         {
             Componenet.Modal.BidNFT bidNFTModel = new Componenet.Modal.BidNFT();
-            bidNFTModel.setBidNFT(this.id, this.price, this.wallet, this.title);
+            bidNFTModel.setBidNFT(this.id, this.EventId, this.price, this.wallet, this.title, this.nftinJSON);
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.mainGrid.Children.Add(bidNFTModel);
         }

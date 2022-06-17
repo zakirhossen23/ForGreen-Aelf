@@ -36,7 +36,7 @@
                     <StackPanel Margin="0,0,0,15" >
                         <TextBlock Text="Bid Amount in AELF" Margin="0,0,0,10" Foreground="White"  FontSize="20"/>
                         <Border CornerRadius="2" Background="White">
-                            <TextBox Name="amountTXT" Height="33" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
+                            <TextBox Name="amountTXT" Height="33" Text="0.00" Padding="5" BorderBrush="Transparent"  FontSize="15"/>
                         </Border>
                     </StackPanel>
                     
