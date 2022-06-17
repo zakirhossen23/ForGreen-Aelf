@@ -67,7 +67,12 @@ H:\Codes\DemeterGiftAelf\ForGreen Aelf\bin\Debug\net5.0-windows\ForGreen.dll
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.csproj.AssemblyReference.cache
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\EventFormat.g.cs
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Layout\Header.g.cs
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\BidNFTModal.g.cs
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\DonateNFTModel.g.cs
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\ViewBidModal.g.cs
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\NFTFormat.g.cs
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\MainWindow.g.cs
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Auction.g.cs
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\CreateEvents.g.cs
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Donation.g.cs
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Home.g.cs
@@ -81,7 +86,12 @@ H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf_Ma
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\App.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\EventFormat.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Layout\Header.baml
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\BidNFTModal.baml
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\DonateNFTModel.baml
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\ViewBidModal.baml
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\NFTFormat.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\MainWindow.baml
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Auction.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\CreateEvents.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Donation.baml
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Home.baml
@@ -98,13 +108,3 @@ H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\refint\ForGreen 
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.pdb
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.genruntimeconfig.cache
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ref\ForGreen Aelf.dll
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\DonateNFTModel.g.cs
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\DonateNFTModel.baml
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Auction.g.cs
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Pages\Auction.baml
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\NFTFormat.g.cs
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\NFTFormat.baml
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\BidNFTModal.g.cs
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\BidNFTModal.baml
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\ViewBidModal.g.cs
-H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Componenet\Modal\ViewBidModal.baml
