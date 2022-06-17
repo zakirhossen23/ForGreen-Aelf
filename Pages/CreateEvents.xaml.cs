@@ -23,9 +23,20 @@ namespace ForGreen_Aelf.Pages
         public CreateEvents()
         {
             InitializeComponent();
+            LoadButton();
         }
         Classes.contract contract = new Classes.contract();
-
+        public void LoadButton()
+        {
+            if (Properties.Settings.Default.userType != "manager")
+            {
+                CreatEventBTN.Content = "Login as Event Manager";
+            }
+            else
+            {
+                CreatEventBTN.Content = "Create Event";
+            }
+        }
         public void clearTextBoxes(List<TextBox> allControls)
         {
             foreach (var control in allControls)
@@ -36,21 +47,32 @@ namespace ForGreen_Aelf.Pages
 
         private async void CreatEventBTN_Click(object sender, RoutedEventArgs e)
         {
-            CreatEventBTN.IsEnabled = false;
-            Dictionary<string, string> InputOBJ = new Dictionary<string, string>();
-            InputOBJ.Add("Title", EventTitleTXT.Text);
-            InputOBJ.Add("End Date", EventEndDateTXT.Text);
-            InputOBJ.Add("Goal", EventGoalTXT.Text);
-            InputOBJ.Add("Logo Link", EventLogoLinkTXT.Text);
-            InputOBJ.Add("Wallet", await contract.GetWalletAddress());
+
+            if (Properties.Settings.Default.userType != "manager")
+            {
+                Pages.Login.LoginSelector login = new Pages.Login.LoginSelector();
+                MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
+                mainWindow.MainFrame.Navigate(login);
+            }
+            else
+            {
+                CreatEventBTN.IsEnabled = false;
+                Dictionary<string, string> InputOBJ = new Dictionary<string, string>();
+                InputOBJ.Add("Title", EventTitleTXT.Text);
+                InputOBJ.Add("End Date", EventEndDateTXT.Text);
+                InputOBJ.Add("Goal", EventGoalTXT.Text);
+                InputOBJ.Add("Logo Link", EventLogoLinkTXT.Text);
+                InputOBJ.Add("Wallet", await contract.GetWalletAddress());
 
 
-            var output =  await contract.CreateEvent(InputOBJ);
+                var output = await contract.CreateEvent(InputOBJ);
 
-            Console.WriteLine(output);
-            clearTextBoxes(new List<TextBox>() { EventTitleTXT, EventGoalTXT, EventLogoLinkTXT });
-            EventEndDateTXT.Text ="";
-            CreatEventBTN.IsEnabled = true;
+                Console.WriteLine(output);
+                clearTextBoxes(new List<TextBox>() { EventTitleTXT, EventGoalTXT, EventLogoLinkTXT });
+                EventEndDateTXT.Text = "";
+                CreatEventBTN.IsEnabled = true;
+            }
+          
         }
     }
 }
