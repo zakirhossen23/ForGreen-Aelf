@@ -17,8 +17,11 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" CornerRadius="15" Width="600" Height="400" HorizontalAlignment="Left" Background="White">
-                            <Image Name="logoIMG"  Source="{Binding}"   Margin="5" Stretch="Uniform"></Image>
-                        </Border>
+                            <Grid Name="LogoContainer">
+                                <MediaElement Name="videoSHOW"  Volume="20" MediaEnded="videoSHOW_MediaEnded" Margin="5"  Stretch="Fill"/>
+                                <Image Name="logoIMG"  Source="{Binding}"   Margin="5" Stretch="Uniform"></Image>
+                            </Grid>
+                            </Border>
                         <Grid Grid.Column="1">
                             <Border HorizontalAlignment="Center" Padding="25"  VerticalAlignment="Top" CornerRadius="15" Background="White" Width="300">
                                 <StackPanel >

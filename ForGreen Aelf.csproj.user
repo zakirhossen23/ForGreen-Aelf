@@ -72,5 +72,8 @@
     <Page Update="Pages\Login\LoginSelector.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Resources Dictionary\CustomRadioButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

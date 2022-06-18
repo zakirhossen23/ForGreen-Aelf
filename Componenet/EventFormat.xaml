@@ -10,6 +10,8 @@
         <StackPanel Margin="15">
             <TextBlock Name="leftDateTXT" Foreground="Black" FontWeight="Medium" FontSize="20">8 Days 0 hours 22 minutes 13 seconds</TextBlock>
             <Grid Margin="0,10"  HorizontalAlignment="Stretch" >
+
+                <MediaElement Name="videoSHOW" HorizontalAlignment="Left" Volume="0" MediaEnded="videoSHOW_MediaEnded" Width="180" Height="180" Stretch="Fill"/>
                 <Image Name="imageSHOW" HorizontalAlignment="Left"  Source="{Binding}" Width="180" Height="180" Stretch="Fill"/>
                 <Grid Margin="180,0,0,0" >
                     <StackPanel Grid.Column="0" Margin="10,10">

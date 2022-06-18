@@ -17,7 +17,12 @@ namespace ForGreen_Aelf.ShortViews
             this.descrition = "";
             this.enddate = DateTime.Parse( parsed.SelectToken("['End Date']").ToString());
             this.price = float.Parse(parsed.SelectToken("Goal").ToString());
-            this.logo = parsed.SelectToken("['Logo Link']").ToString();
+            try
+            {
+                this.Type = parsed.SelectToken("Type").ToString();
+            }
+            catch (Exception) { }
+            this.logo = parsed.SelectToken("['Logo Link']").ToString();            
             this.wallet = parsed.SelectToken("Wallet").ToString();
         }
 
@@ -27,6 +32,7 @@ namespace ForGreen_Aelf.ShortViews
         public DateTime enddate;
         public float price;
         public string logo;
+        public string Type;
         public string wallet;
     }
 }

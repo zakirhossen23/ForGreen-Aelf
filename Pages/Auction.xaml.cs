@@ -25,7 +25,15 @@ namespace ForGreen_Aelf.Pages
             InitializeComponent();
             LoadButton();
         }
-
+        Classes.contract contract = new Classes.contract();
+        public int id;
+        public string title;
+        public string descrition;
+        public DateTime enddate;
+        public float price;
+        public string type;
+        public string logo;
+        public string wallet;
         public void LoadButton()
         {
             if (Properties.Settings.Default.userType != "user")
@@ -37,15 +45,21 @@ namespace ForGreen_Aelf.Pages
                 DonateNFTBTN.Visibility = Visibility.Visible;
             }
         }
-        Classes.contract contract = new Classes.contract();
-        public int id;
-        public string title;
-        public string descrition;
-        public DateTime enddate;
-        public float price;
-        public string logo;
-        public string wallet;
-        public void setAuction(int id, string title, string descrition, DateTime enddate, float price, string logo, string wallet)
+    
+        private void setLink(string link, string type)
+        {
+            if (type == null) return;
+            if (type.Contains("image"))
+            {
+                LogoContainer.Children.Remove(videoSHOW);
+            }
+            else
+            {
+                LogoContainer.Children.Remove(logoIMG);
+                videoSHOW.Source = new Uri(link);
+            }
+        }
+        public void setAuction(int id, string title, string descrition, DateTime enddate, float price, string type, string logo, string wallet)
         {
             this.id = id;
             this.title = title;
@@ -54,8 +68,10 @@ namespace ForGreen_Aelf.Pages
             this.enddate = enddate;
             this.price = price;
             this.RaisedAelf.Text = $" raised of {price} AELF goal";
+            this.type = type;
             this.logo = logo;
             this.DataContext = logo;
+            setLink(logo, type);
             this.wallet = wallet;
             getAllNFTs();
         }
@@ -92,6 +108,11 @@ namespace ForGreen_Aelf.Pages
             donateNFTModel.setDonateNFTModel(this.id, this.title);
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.mainGrid.Children.Add(donateNFTModel);
+        }
+
+        private void videoSHOW_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            videoSHOW.Position = TimeSpan.Zero;
         }
     }
 }

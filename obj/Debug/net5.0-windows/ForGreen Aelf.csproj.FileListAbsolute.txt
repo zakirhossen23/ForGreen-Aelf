@@ -108,3 +108,4 @@ H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\refint\ForGreen 
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.pdb
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ForGreen Aelf.genruntimeconfig.cache
 H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\ref\ForGreen Aelf.dll
+H:\Codes\DemeterGiftAelf\ForGreen Aelf\obj\Debug\net5.0-windows\Resources Dictionary\CustomRadioButton.baml

@@ -26,7 +26,7 @@ namespace ForGreen_Aelf.Componenet
             LoadAuction();
         }
         int id;
-        string title; DateTime enddate; string goal; string logo; string wallet;
+        string title; DateTime enddate; string goal; string type; string logo; string wallet;
         public void LoadAuction()
         {
             if (Properties.Settings.Default.userType != "user")
@@ -38,8 +38,21 @@ namespace ForGreen_Aelf.Componenet
                 DonateBTN.Visibility = Visibility.Visible;
             }
         }
-
-        public void setEventFormat(int id, string title, DateTime enddate, string goal, string logo, string wallet)
+        private void setLink(string link, string type)
+        {
+            if (type == null) return;
+            if (type.Contains("image"))
+            {
+                
+                videoSHOW.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                imageSHOW.Visibility = Visibility.Collapsed;
+                videoSHOW.Source = new Uri(link);
+            }
+        }
+        public void setEventFormat(int id, string title, DateTime enddate, string goal, string type, string logo, string wallet)
         {
             this.id = id;
             this.title = title;
@@ -51,6 +64,8 @@ namespace ForGreen_Aelf.Componenet
             this.GoalTXT.Text = $"Goal: {goal} aelf";
             this.logo = logo;
             this.DataContext = logo;
+            this.type = type;
+            setLink(logo, type);
 
             this.wallet = wallet;
             System.Timers.Timer timer = new System.Timers.Timer();
@@ -86,9 +101,14 @@ namespace ForGreen_Aelf.Componenet
         private void AuctionBTN_Click(object sender, RoutedEventArgs e)
         {
             Pages.Auction auction = new Pages.Auction();
-            auction.setAuction(id, title, "", enddate, int.Parse(goal), logo, wallet);
+            auction.setAuction(id, title, "", enddate, int.Parse(goal),type , logo, wallet);
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.MainFrame.Navigate(auction);
+        }
+
+        private void videoSHOW_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            videoSHOW.Position = TimeSpan.Zero;
         }
     }
 }

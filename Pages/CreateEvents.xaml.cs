@@ -44,6 +44,17 @@ namespace ForGreen_Aelf.Pages
                 control.Clear();
             }
         }
+        private string getLogoType()
+        {
+            if(videoType.IsChecked == true)
+            {
+                return "video";
+            }
+            else
+            {
+                return "image";
+            }
+        }
 
         private async void CreatEventBTN_Click(object sender, RoutedEventArgs e)
         {
@@ -61,6 +72,7 @@ namespace ForGreen_Aelf.Pages
                 InputOBJ.Add("Title", EventTitleTXT.Text);
                 InputOBJ.Add("End Date", EventEndDateTXT.Text);
                 InputOBJ.Add("Goal", EventGoalTXT.Text);
+                InputOBJ.Add("Type", getLogoType());
                 InputOBJ.Add("Logo Link", EventLogoLinkTXT.Text);
                 InputOBJ.Add("Wallet", await contract.GetWalletAddress());
 

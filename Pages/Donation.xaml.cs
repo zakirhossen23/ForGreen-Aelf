@@ -37,7 +37,7 @@ namespace ForGreen_Aelf.Pages
             {
                 var element = eventDetails[i];
                 Componenet.EventFormat eventFormat = new Componenet.EventFormat();
-                eventFormat.setEventFormat(element.id,element.title,element.enddate, element.price.ToString(),element.logo, element.wallet);
+                eventFormat.setEventFormat(element.id,element.title,element.enddate, element.price.ToString(),element.Type,element.logo, element.wallet);
                 eventFormat.Margin = new Thickness(0, 0, 0, 5);
                 EventContainer.Children.Add(eventFormat);
             }
