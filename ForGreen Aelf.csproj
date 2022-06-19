@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <None Remove="Componenet\Layout\favicon.png" />
+    <None Remove="Componenet\Layout\favicon.svg" />
     <None Remove="Pages\CharityHand.png" />
     <None Remove="Pages\CharityText.png" />
     <None Remove="Pages\Panel.png" />
@@ -42,6 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Componenet\Layout\favicon.svg" />
     <Resource Include="Resources\CharityHand.png" />
     <Resource Include="Resources\CharityText.png" />
     <Resource Include="Resources\Panel.png" />

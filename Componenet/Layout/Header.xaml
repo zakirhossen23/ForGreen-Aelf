@@ -13,7 +13,7 @@
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Margin="10" Orientation="Horizontal">
-            <Image x:Name="homeBTN" RenderOptions.EdgeMode="Aliased" RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center" Width="48" Source="/Resources/favicon.png" Stretch="Uniform" MouseDown="homeBTN_MouseDown"  />
+            <Image x:Name="homeBTN"  RenderOptions.BitmapScalingMode="HighQuality" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center" Width="48" Source="/Resources/favicon.png" Stretch="Uniform" MouseDown="homeBTN_MouseDown"  />
             <TextBlock x:Name="donationBTN" Width="100" FontSize="15" TextAlignment="Center" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center"  Background="Transparent"  Foreground="Yellow" Text="Donation" MouseDown="donationBTN_MouseDown"/>
             <TextBlock x:Name="CreateEventsBTN" Width="120" FontSize="15" TextAlignment="Center" HorizontalAlignment="Left" Cursor="Hand" VerticalAlignment="Center"  Background="Transparent"  Foreground="Yellow" Text="Create Events" MouseDown="CreateEventsBTN_MouseDown"/>
 
