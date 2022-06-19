@@ -70,6 +70,7 @@ namespace ForGreen_Aelf.Pages
                 CreatEventBTN.IsEnabled = false;
                 Dictionary<string, string> InputOBJ = new Dictionary<string, string>();
                 InputOBJ.Add("Title", EventTitleTXT.Text);
+                InputOBJ.Add("Description", EventDescriptionTXT.Text);
                 InputOBJ.Add("End Date", EventEndDateTXT.Text);
                 InputOBJ.Add("Goal", EventGoalTXT.Text);
                 InputOBJ.Add("Type", getLogoType());
@@ -80,7 +81,7 @@ namespace ForGreen_Aelf.Pages
                 var output = await contract.CreateEvent(InputOBJ);
 
                 Console.WriteLine(output);
-                clearTextBoxes(new List<TextBox>() { EventTitleTXT, EventGoalTXT, EventLogoLinkTXT });
+                clearTextBoxes(new List<TextBox>() { EventTitleTXT, EventDescriptionTXT,EventGoalTXT, EventLogoLinkTXT });
                 EventEndDateTXT.Text = "";
                 CreatEventBTN.IsEnabled = true;
             }

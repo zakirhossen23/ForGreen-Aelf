@@ -47,7 +47,16 @@
                             </Border>
                         </Grid>
                     </Grid>
+                    <StackPanel  Width="600" HorizontalAlignment="Left">
+                        <Border BorderThickness="0,0,0,1" BorderBrush="White">
+                            <TextBlock FontSize="25" Margin="50, 20" Foreground="White" Text="Description"/>
+                        </Border>
+                        <StackPanel Margin="0,20,0,0">
+                            <TextBlock Name="DescriptionTXT" Text="The UK's largest woodland conservation charity committed to protecting British woodlands and replanting trees. Many of the woodlands that we enjoy regularly in the UK are protected and maintained by The Woodland Trust." TextWrapping="Wrap" FontSize="20" Foreground="White"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
+               
                 <StackPanel Width="1100" x:Name="NFTContainer" Grid.Row="1" Margin="15" VerticalAlignment="Top"  >
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Loading..." Foreground="White" FontSize="25"></TextBlock>
                 </StackPanel>

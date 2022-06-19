@@ -14,7 +14,7 @@ namespace ForGreen_Aelf.ShortViews
             JToken parsed =  JObject.Parse(input);
             this.id = idno;
             this.title = parsed.SelectToken("Title").ToString();
-            this.descrition = "";
+            this.descrition = parsed.SelectToken("Description").ToString();
             this.enddate = DateTime.Parse( parsed.SelectToken("['End Date']").ToString());
             this.price = float.Parse(parsed.SelectToken("Goal").ToString());
             try

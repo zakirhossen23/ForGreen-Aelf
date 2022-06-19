@@ -26,7 +26,7 @@ namespace ForGreen_Aelf.Componenet
             LoadAuction();
         }
         int id;
-        string title; DateTime enddate; string goal; string type; string logo; string wallet;
+        string title; string description; DateTime enddate; string goal; string type; string logo; string wallet;
         public void LoadAuction()
         {
             if (Properties.Settings.Default.userType != "user")
@@ -52,10 +52,11 @@ namespace ForGreen_Aelf.Componenet
                 videoSHOW.Source = new Uri(link);
             }
         }
-        public void setEventFormat(int id, string title, DateTime enddate, string goal, string type, string logo, string wallet)
+        public void setEventFormat(int id, string title, string description, DateTime enddate, string goal, string type, string logo, string wallet)
         {
             this.id = id;
             this.title = title;
+            this.description = description;
             this.TitleTXT.Text = title;
             this.enddate = enddate;
             timeLefting();
@@ -101,7 +102,7 @@ namespace ForGreen_Aelf.Componenet
         private void AuctionBTN_Click(object sender, RoutedEventArgs e)
         {
             Pages.Auction auction = new Pages.Auction();
-            auction.setAuction(id, title, "", enddate, int.Parse(goal),type , logo, wallet);
+            auction.setAuction(id, title, description, enddate, int.Parse(goal),type , logo, wallet);
             MainWindow mainWindow = (MainWindow)Application.Current.Windows[0];
             mainWindow.MainFrame.Navigate(auction);
         }

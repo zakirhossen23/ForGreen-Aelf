@@ -6,7 +6,9 @@
       xmlns:local="clr-namespace:ForGreen_Aelf.Pages"
       mc:Ignorable="d" 
       Title="CreateEvents">
-    <Grid Width="600" Height="570" >
+        <ScrollViewer  Height="570">
+        <Grid  Width="600">
+            
         <Border BorderBrush="White" Margin="2" Background="#121F29" BorderThickness="5">
             <StackPanel>
                 <StackPanel >
@@ -16,6 +18,12 @@
                     <TextBlock Text="Event Title" Foreground="White" FontSize="20" Margin="0,0,0,10"/>
                     <Border Background="White"  CornerRadius="5">
                         <TextBox Name="EventTitleTXT" Padding="10" FontSize="15" Height="40" />
+                    </Border>
+                </StackPanel>
+                <StackPanel Margin="30 0">
+                    <TextBlock Text="Event Description" Foreground="White" FontSize="20" Margin="0,0,0,10"/>
+                    <Border Background="White"  CornerRadius="5">
+                        <TextBox Name="EventDescriptionTXT" Padding="10" FontSize="15" Height="150" TextWrapping="Wrap" AcceptsReturn="True"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Margin="30 20">
@@ -51,4 +59,5 @@
             </StackPanel>
         </Border>
     </Grid>
+        </ScrollViewer>
 </Page>

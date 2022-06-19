@@ -65,6 +65,7 @@ namespace ForGreen_Aelf.Pages
             this.title = title;
             this.TitleTXT.Text = title;
             this.descrition = descrition;
+            this.DescriptionTXT.Text = descrition;
             this.enddate = enddate;
             this.price = price;
             this.RaisedAelf.Text = $" raised of {price} AELF goal";
